@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr 200px;
+  }
+  
+  header{
+    background-color: #000059;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    position: fixed;
+    width: 80%;
+    top: 0;
+    justify-content: space-between;
+    display: flex;
+    padding: 0% 10%;
+  }
+  
+    
+  .header-profile {
+    display: flex;
+    align-items:center;
+    }
+  
+  .avatar{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    }
+    
+  nav ul{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+  }
+  
+  nav ul a{
+    display: block;
+    padding: 30px 20px;
+  }
+  
+  nav ul li {
+    color: #DFE3EF;
+    font-size: 25px;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  nav ul li:hover {
+    color: #00DBFF;
+  }
+  
+  .header-profile> h3 {
+    font-size: 20px;
+  }
+  
+  
+  .section-home> .btn {
+    width: 20%;
+  }
+  
+  .section-home {
+    background-image:url('assets/ceudestrelado.png');
+    padding: 14% 10%;
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+  
+  .apresentacao> h1 {
+    color: #DFE3EF;
+    font-family: 'Candal', sans-serif;
+    font-size: 75px;
+    line-height: 100px;
+   }
+  
+ .apresentacao> p {
+   color: #DFE3EF;
+   font-family: 'Space Grotesk', sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .fotoperfil {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+  }
+  
+  .section-home> .btn {
+    padding: 1.4rem 5rem;
+  }
+  
+  .btn:hover {
+    transform: translateY(-5px);
+  }
+  
+  .section-about {
+    background-color: #DFE3EF;
+    padding: 10% 10%;
+    display:block;
+  }
+
+  .sobre> .nomecompleto {
+    padding-top: 40px;
+  }
+  
+  .get-to-know-me> p {
+    padding-top: 40px;
+    font-size: 30px;
+    color: #000059;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 40px;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+  }
+
+  .sobre> .seta {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    padding-top: 40px;
+  }
+  
+  .about-content {
+    display: grid;
+    column-gap: 1px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-skills {
+    background-color: #F2F4F9;
+    padding: 6% 5%;
+    text-align: center;
+  }
+
+  .habilidades> h1 {
+    color: #8D95FF;
+    font-family: 'Candal', sans-serif;
+    font-size: 75px;
+    margin-bottom: 90px;
+  }
+
+  .conjunto {
+    display:block;
+    display: grid;
+    column-gap: 1px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .ux> h3 {
+    color: #000059;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .ux> p {
+    color: #8D95FF;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30px;
+  }
+
+  .front> h3 {
+    color: #000059;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .front> p {
+    color: #8D95FF;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30px;
+  }
+
+  .grafico> h3 {
+    color: #000059;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .grafico> p {
+    color: #8D95FF;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30px;
+  }
+  
+  .section-project {
+    background-color: #DFE3EF;
+    padding: 8% 10%;
+    display:block;
+  }
+  
+  .projeto> h1 {
+    color: #8D95FF;
+    font-family: 'Candal', sans-serif;
+    font-size: 75px;
+    text-align: center;
+  }
+
+  .projects {
+    display: grid;
+    column-gap: 1px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 200px;
+  }
+
+  .projects> .phone-case1 {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+
+  .projects> .phone-case2 {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+  }
+
+  .project-description> .title {
+    margin-bottom: 15px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .description1> p {
+    padding-bottom: 40px;
+    color: #000059;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+    width: 830px;
+    
+  }
+
+  .description1> h3{
+    color: #000059;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    margin-top: 15px; 
+  }
+
+  .description1> h3:hover {
+    color: #8D95FF;
+  }
+
+  .description2> p {
+    padding-bottom: 40px;
+    color: #242915;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30px;
+    line-height: 40px;
+    width: 830px;
+    
+  }
+
+  .description2> h3{
+    color: #242915;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    margin-top: 15px; 
+  }
+
+  .description2> h3:hover {
+    color: #8D95FF;
+  }
+
+  .section-contact {
+    background-color: #F2F4F9;
+    padding: 1% 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .section-contact> h1{
+    color: #8D95FF;
+    font-family: 'Candal', sans-serif;
+    font-size: 75px;
+    margin-bottom: 25px;
+    margin-top: 5%;
+  }
+
+  .contato {
+    position: relative;
+  }
+  
+  .contato> h3{
+    color: #000059;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .icons {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+  }
+
+  .icons img {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom {
+    background-color: #F2F4F9;
+    padding: 1% 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-bottom span{
+    color: #000059;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .footer-bottom a{
+    color: #000059;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  

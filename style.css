@@ -73,6 +73,7 @@
   
   .section-home {
     background-image:url('assets/ceudestrelado.png');
+    background-size: cover;
     padding: 14% 10%;
     display: grid;
     text-align: left;

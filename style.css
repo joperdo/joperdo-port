@@ -67,6 +67,7 @@
   .section-home {
     background-image:url('assets/ceudestrelado.png');
     background-size: cover;
+    background-position: center;
     padding: 14% 10%;
     display: grid;
     text-align: left;
@@ -78,14 +79,14 @@
     color: #DFE3EF;
     font-family: 'Candal', sans-serif;
     font-size: 75px;
-    line-height: 100px;
+    line-height: normal;
    }
   
  .apresentacao> p {
    color: #DFE3EF;
    font-family: 'Space Grotesk', sans-serif;
     font-size: 30px;
-    line-height: 40px;
+    line-height: normal;
   }
 
   .fotoperfil {
@@ -125,7 +126,7 @@
     font-size: 30px;
     color: #000059;
     font-family: 'Space Grotesk', sans-serif;
-    line-height: 40px;
+    line-height: normal;
     display: flex;
     align-items: right;
     justify-content: right;
@@ -217,13 +218,20 @@
     margin-top: 200px;
   }
 
+  .projects2 {
+    display: grid;
+    column-gap: 1px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 200px;
+  }
+
   .projects> .phone-case1 {
     display: flex;
     align-items: left;
     justify-content: left;
   }
 
-  .projects> .phone-case2 {
+  .projects2> .phone-case2 {
     display: flex;
     align-items: right;
     justify-content: right;
@@ -241,7 +249,7 @@
     color: #000059;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 30px;
-    line-height: 40px;
+    line-height: normal;
     width: 830px;
     
   }
@@ -266,7 +274,7 @@
     color: #242915;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 30px;
-    line-height: 40px;
+    line-height: normal;
     width: 830px;
     
   }
@@ -302,6 +310,24 @@
     margin-top: 75px;
   }
 
+  .contato {
+    position: relative;
+  }
+
+  .contato> a{
+    color: #000059;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .icons {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -310,7 +336,7 @@
     margin-right: 15px;
     margin-left: 15px;
     margin-bottom: 25px;
-    margin-top: 20px;
+    margin-top: 50px;
   }
 
   .footer-bottom {
@@ -332,11 +358,312 @@
   }
 
 
+  @media screen and (min-width: 300px) and (max-width: 500px) {
+
+
+    header{
+      display: none;
+    }
+
+    .section-home {
+      background-image:url('assets/ceudestrelado.png');
+      background-size: cover;
+      background-position: center;
+      flex-direction: column-reverse;
+      padding: 15% 5%;
+      display: flex;
+      text-align: center;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 10px;
+    }
+
+    .apresentacao> h1 {
+      font-size: 25px;
+      padding: 0px 350px;
+     }
+    
+   .apresentacao> p {
+      font-size: 12px;
+      padding: 0px 350px;
+    }
+  
+    .fotoperfil {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .fotoperfil img{
+      width: 260px;
+      padding-bottom: 30px;
+    }
+
+
+    
+
+    .section-about {
+      padding: 7% 5%;
+      display: block;
+      z-index: 1;
+    }
+  
+    .about-content {
+      flex-direction: column-reverse;
+      display: flex;
+      column-gap: 1px;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .janela {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .janela img{
+      width: 300px;
+    }
+
+    .sobre> .nomecompleto{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .sobre> .nomecompleto img{
+      width: 260px;
+      padding-left: 430px;
+      padding-right: 430px;
+      padding-top: 0px;
+    }
+    
+    .get-to-know-me> p {
+      padding-top: 15px;
+      font-size: 12px;
+      display: flex;
+      align-items: left;
+      justify-content: left;
+      padding: 10px 370px;
+    }
+  
+    .sobre> .seta {
+      display: flex;
+      align-items: right;
+      justify-content: right;
+      padding-top: 0px;
+    }
+
+    .sobre> .seta img{
+      width: 28px;
+      padding-right: 325px;
+      padding-bottom: 5px;
+    }
+  
+
+
+    .section-skills {
+      padding: 6% 5%;
+      text-align: center;
+    }
+  
+    .habilidades> h1 {
+      font-size: 25px;
+      margin-bottom: 50px;
+    }
+  
+    .conjunto {
+      flex-direction: column;
+      display: flex;
+      column-gap: 1px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .ux img{
+      width: 100px;
+    }
+    
+    .ux> h3 {
+      font-size: 17px;
+      margin-bottom: 5px;
+    }
+  
+    .ux> p {
+      font-size: 12px;
+      padding-bottom: 30px;
+    }
+
+    .front img {
+      width: 100px;
+    }
+  
+    .front> h3 {
+      font-size: 17px;
+      margin-bottom: 5px;
+    }
+  
+    .front> p {
+      font-size: 12px;
+      padding-bottom: 30px;
+    }
+
+    .grafico img {
+      width: 100px;
+    }
+  
+    .grafico> h3 {
+      font-size: 17px;
+      margin-bottom: 5px;
+    }
+  
+    .grafico> p {
+      font-size: 12px;
+      padding-bottom: 30px;
+    }
+
+
+
+
+
+    .section-project {
+      padding: 8% 5%;
+      display:block;
+    }
+    
+    .projeto> h1 {
+      font-size: 25px;
+    }
+  
+    .projects {
+      display: flex;
+      flex-direction: column-reverse;
+      column-gap: 1px;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 70px;
+    }
+
+    .projects2 {
+      display: flex;
+      flex-direction: column;
+      column-gap: 1px;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 70px;
+    }
+  
+    .projects> .phone-case1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .projects> .phone-case1 img{
+      width: 260px;
+      margin-bottom: 20px;
+    }
+  
+    .projects2> .phone-case2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .projects2> .phone-case2 img{
+      width: 260px;
+      margin-bottom: 20px;
+    }
+  
+    .project-description> .title {
+      margin-bottom: 15px; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .project-description> .title img{
+      width: 260px;
+    }
+  
+    .description1> p {
+      padding-bottom: 40px;
+      font-size: 12px;
+      width: 280px;
+      margin: auto;
+      padding: 10px 0px;
+    }
+  
+    .description1> h3{
+      font-size: 17px;
+      margin-top: 10px; 
+      margin-bottom: 20px;
+    }
+  
+    .description1> h3:hover {
+      color: #8D95FF;
+    }
+  
+    .description2> p {
+      padding-bottom: 40px;
+      font-size: 12px;
+      width: 280px;
+      margin: auto;
+      padding: 10px 0px;
+      
+    }
+  
+    .description2> h3{
+      font-size: 17px;
+      margin-top: 10px; 
+      margin-bottom: 20px;
+    }
+
+
+
+    
+    .section-contact {
+      padding: 1% 5%;
+    }
+  
+    .section-contact> h1{
+      font-size: 25px;
+      margin-bottom: 25px;
+      margin-top: 50px;
+    }
+
+    .contato img {
+      width: 320px;
+    }
+  
+    .contato> a{
+      font-size: 17px;
+      margin-bottom: 25px;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .icons img {
+      width: 25px;
+      margin-right: 5px;
+      margin-left: 5px;
+      margin-bottom: 25px;
+      margin-top: 20px;
+    }
+
+    .footer-bottom span{
+      font-size: 10px;
+    }
+  
+    .footer-bottom a{
+      font-size: 10px;
+    }
+
+  }
+
 
   @media screen and (min-width: 1100px) and (max-width: 1700px) {
 
     .avatar img{
-     width: 150px;
+        width: 150px;
       }
 
       nav ul li {
@@ -347,12 +674,10 @@
       
       .apresentacao> h1 {
         font-size: 50px;
-        line-height: 70px;
        }
       
      .apresentacao> p {
         font-size: 21px;
-        line-height: 30px;
       }
     
       .fotoperfil img{
@@ -373,7 +698,6 @@
     .get-to-know-me> p {
       padding-top: 32px;
       font-size: 21px;
-      line-height: 25px;
     }
 
     .sobre> .seta img{
@@ -438,23 +762,26 @@
       margin-top: 150px;
     }
 
+    .projects2{
+      margin-top: 150px;
+    }
+
     .projects> .phone-case1 img{
       width: 430px;
     }
   
-    .projects> .phone-case2 img{
+    .projects2> .phone-case2 img{
       width: 430px;
     }
   
     .project-description> .title img{
       width: 350px;
     }
-  
+
     .description1> p {
       padding-top: 20px;
       padding-bottom: 10px;
       font-size: 21px;
-      line-height: 25px;
       width: 600px;
     }
   
@@ -467,7 +794,6 @@
       padding-top: 20px;
       padding-bottom: 10px;
       font-size: 21px;
-      line-height: 25px;
       width: 600px;
     }
   
@@ -487,7 +813,12 @@
     }
   
     .contato img {
-      width: 425px;
+      width: 450px;
+    }
+
+    .contato> a{
+      font-size: 25px;
+      margin-bottom: 25px;
     }
 
     .icons img {
@@ -495,7 +826,7 @@
       margin-right: 10px;
       margin-left: 10px;
       margin-bottom: 25px;
-      margin-top: 20px;
+      margin-top: 30px;
     }
   
 }
@@ -519,12 +850,10 @@
     
     .apresentacao> h1 {
       font-size: 60px;
-      line-height: 90px;
      }
     
    .apresentacao> p {
       font-size: 23px;
-      line-height: 30px;
     }
   
     .fotoperfil img{
@@ -545,7 +874,6 @@
   .get-to-know-me> p {
     padding-top: 32px;
     font-size: 23px;
-    line-height: 30px;
   }
 
   .sobre> .seta img{
@@ -610,11 +938,16 @@
     margin-top: 150px;
   }
 
+  .projects2 {
+    margin-top: 150px;
+  }
+
+
   .projects> .phone-case1 img{
     width: 500px;
   }
 
-  .projects> .phone-case2 img{
+  .projects2> .phone-case2 img{
     width: 500px;
   }
 
@@ -626,7 +959,6 @@
     padding-top: 20px;
     padding-bottom: 10px;
     font-size: 23px;
-    line-height: 30px;
     width: 600px;
   }
 
@@ -639,7 +971,6 @@
     padding-top: 20px;
     padding-bottom: 10px;
     font-size: 23px;
-    line-height: 25px;
     width: 600px;
   }
 
@@ -662,12 +993,17 @@
     width: 550px;
   }
 
+  .contato> a{
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
   .icons img {
     width: 50px;
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: 25px;
-    margin-top: 20px;
+    margin-top: 50px;
   }
 
 }

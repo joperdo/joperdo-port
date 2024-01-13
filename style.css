@@ -368,20 +368,18 @@
     header{
       box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
       position: fixed;
-      min-width: 320px;
-      max-width: 500px;
-      width: 0px;
+      width: auto;
       top: 0;
       justify-content: space-between;
       display: flex;
-      padding: 0% 5%;
+      padding: auto;
       z-index: 1000;
     }
     
     .header-profile {
       display: flex;
       align-items:center;
-      margin-left: 15px;
+      margin-left: 10px;
       }
 
     .avatar img{
@@ -390,7 +388,7 @@
       
     nav ul{
       z-index: 1000;
-      margin-right: 15px;
+      margin-right: 10px;
     }
     
     nav ul a{
@@ -660,7 +658,7 @@
 
     
     .section-contact {
-      padding: 10% 5%;
+      padding: 5% 5%;
     }
   
     .section-contact> h1{

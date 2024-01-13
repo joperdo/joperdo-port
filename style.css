@@ -370,7 +370,7 @@
       position: fixed;
       min-width: 320px;
       max-width: 500px;
-      width: 100%;
+      width: 0px;
       top: 0;
       justify-content: space-between;
       display: flex;
@@ -445,7 +445,7 @@
     
 
     .section-about {
-      padding: 50% 5%;
+      padding: 20% 5%;
       display: block;
       z-index: 1;
     }
@@ -503,7 +503,7 @@
 
 
     .section-skills {
-      padding: 50% 5%;
+      padding: 25% 5%;
       text-align: center;
     }
   
@@ -566,7 +566,7 @@
 
 
     .section-project {
-      padding: 30% 5%;
+      padding: 25% 5%;
       display:block;
     }
     

@@ -359,10 +359,48 @@
 
 
   @media screen and (min-width: 300px) and (max-width: 500px) {
-
+    
+    main{
+      width: 500px;
+    }
 
     header{
-      display: none;
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+      position: fixed;
+      width: 500px;
+      top: 0;
+      justify-content: space-between;
+      display: flex;
+      padding: 0% 0%;
+      z-index: 1000;
+    }
+    
+    .header-profile {
+      display: flex;
+      align-items:center;
+      margin-left: 25px;
+      }
+
+    .avatar img{
+      width: 100px;
+      }
+      
+    nav ul{
+      z-index: 1000;
+      margin-right: 25px;
+    }
+    
+    nav ul a{
+      display: block;
+      padding: 20px 7px;
+    }
+    
+    nav ul li {
+      font-size: 12px;
+    }
+    
+    nav ul li:hover {
+      color: #00DBFF;
     }
 
     .section-home {
@@ -370,7 +408,7 @@
       background-size: cover;
       background-position: center;
       flex-direction: column-reverse;
-      padding: 15% 5%;
+      padding: 35% 5%;
       display: flex;
       text-align: center;
       grid-template-columns: 1fr 1fr;
@@ -379,12 +417,14 @@
 
     .apresentacao> h1 {
       font-size: 25px;
-      padding: 0px 350px;
+      width: 280px;
+      margin: auto;
      }
     
    .apresentacao> p {
       font-size: 12px;
-      padding: 0px 350px;
+      width: 300px;
+      margin: auto;
     }
   
     .fotoperfil {
@@ -402,7 +442,7 @@
     
 
     .section-about {
-      padding: 7% 5%;
+      padding: 10% 5%;
       display: block;
       z-index: 1;
     }
@@ -432,8 +472,6 @@
   
     .sobre> .nomecompleto img{
       width: 260px;
-      padding-left: 430px;
-      padding-right: 430px;
       padding-top: 0px;
     }
     
@@ -443,7 +481,8 @@
       display: flex;
       align-items: left;
       justify-content: left;
-      padding: 10px 370px;
+      width: 270px;
+      margin: auto;
     }
   
     .sobre> .seta {
@@ -455,14 +494,14 @@
 
     .sobre> .seta img{
       width: 28px;
-      padding-right: 325px;
+      margin-right: 20px;
       padding-bottom: 5px;
     }
   
 
 
     .section-skills {
-      padding: 6% 5%;
+      padding: 10% 5%;
       text-align: center;
     }
   
@@ -525,7 +564,7 @@
 
 
     .section-project {
-      padding: 8% 5%;
+      padding: 10% 5%;
       display:block;
     }
     
@@ -538,7 +577,7 @@
       flex-direction: column-reverse;
       column-gap: 1px;
       grid-template-columns: 1fr 1fr;
-      margin-top: 70px;
+      margin-top: 50px;
     }
 
     .projects2 {
@@ -557,7 +596,7 @@
 
     .projects> .phone-case1 img{
       width: 260px;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
     }
   
     .projects2> .phone-case2 {
@@ -568,11 +607,11 @@
 
     .projects2> .phone-case2 img{
       width: 260px;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
     }
   
     .project-description> .title {
-      margin-bottom: 15px; 
+      margin-bottom: 10px; 
       display: flex;
       align-items: center;
       justify-content: center;
@@ -619,7 +658,7 @@
 
     
     .section-contact {
-      padding: 1% 5%;
+      padding: 10% 5%;
     }
   
     .section-contact> h1{

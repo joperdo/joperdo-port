@@ -370,6 +370,7 @@
       position: fixed;
       min-width: 320px;
       max-width: 500px;
+      width: 100%;
       top: 0;
       justify-content: space-between;
       display: flex;
@@ -410,7 +411,7 @@
       background-size: cover;
       background-position: center;
       flex-direction: column-reverse;
-      padding: 35% 5%;
+      padding: 50% 5%;
       display: flex;
       text-align: center;
       grid-template-columns: 1fr 1fr;
@@ -444,7 +445,7 @@
     
 
     .section-about {
-      padding: 10% 5%;
+      padding: 50% 5%;
       display: block;
       z-index: 1;
     }
@@ -502,7 +503,7 @@
 
 
     .section-skills {
-      padding: 10% 5%;
+      padding: 50% 5%;
       text-align: center;
     }
   
@@ -565,7 +566,7 @@
 
 
     .section-project {
-      padding: 10% 5%;
+      padding: 30% 5%;
       display:block;
     }
     

@@ -23,7 +23,7 @@
     background-color: #000059;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
     position: fixed;
-    min-width: 80%;
+    width: 80%;
     top: 0;
     justify-content: space-between;
     display: flex;
@@ -368,8 +368,7 @@
     header{
       box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
       position: fixed;
-      min-width: 320px;
-      max-width: 500px;
+      width: 90%;
       top: 0;
       justify-content: space-between;
       display: flex;
